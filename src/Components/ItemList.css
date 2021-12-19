@@ -1,0 +1,71 @@
+.containerList1 {
+  display: block;
+  position: absolute;
+  background-color: #efefef;
+  width: 50%;
+  max-height: 75%;
+  overflow: auto;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  background-color: #efefef;
+  padding: 0 20px;
+}
+
+.profit {
+  color: #09c51f;
+}
+
+.loss {
+  color: #e75757;
+}
+
+.card:hover {
+  background-color: #dfdfdf;
+}
+
+.addBtn {
+  display: none;
+}
+
+.card:hover h4,
+.card:hover p {
+  filter: blur(0.5px);
+}
+
+.card:hover > .addBtn,
+.addBtn:hover {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  right: 25%;
+  width: 115px;
+  height: 115px;
+}
+
+.addBtn > button {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.openImage {
+  width: 70%;
+  padding-top: 7%;
+}
+
+@media (max-width: 900px) {
+  .containerList1 {
+    display: block;
+    position: absolute;
+    background-color: #efefef;
+    width: 96%;
+    max-height: 75%;
+    overflow: auto;
+  }
+}
