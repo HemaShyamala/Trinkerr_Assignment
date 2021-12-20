@@ -23,10 +23,11 @@
   color: #e75757;
 }
 
-.card:hover {
-  background-color: #dfdfdf;
+.card p {
+  color: rgb(167, 164, 164);
+  margin-top: -3%;
+  padding-bottom: 2%;
 }
-
 .addBtn {
   display: none;
 }
@@ -43,7 +44,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  right: 25%;
+  left: 80%;
   width: 115px;
   height: 115px;
 }
@@ -64,8 +65,8 @@
     display: block;
     position: absolute;
     background-color: #efefef;
-    width: 96%;
-    max-height: 75%;
+    width: 70%;
+    max-height: 85%;
     overflow: auto;
   }
 }

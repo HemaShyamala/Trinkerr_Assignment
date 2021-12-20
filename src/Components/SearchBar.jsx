@@ -24,7 +24,7 @@ export default function SearchBar() {
   }, [query]);
 
   return (
-    <div>
+    <div className="inputMainDiv">
       <div width="100%" className="inputDiv">
         <input
           type="text"
@@ -44,9 +44,7 @@ export default function SearchBar() {
         </p>
       </div>
 
-      <div
-        className={query.length > 0 ? "containerSearch1" : "containerSearch2"}
-      >
+      <div className={query.length > 0 ? "containerSearch1" : "emptyBox"}>
         {suggestion &&
           suggestion.map((el, i) => {
             return (
@@ -56,6 +54,7 @@ export default function SearchBar() {
                     display: "flex",
                     flexDirection: "column",
                     textAlign: "left",
+                    margin: "0%",
                   }}
                 >
                   <h4

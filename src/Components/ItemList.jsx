@@ -7,17 +7,21 @@ export default function ItemList() {
   return (
     <>
       <div className="containerList1">
-        <div>
-          <h2>Wishlist</h2>
-          <button
-            onClick={() => {
-              setWishList([]);
-            }}
-          >
-            {" "}
-            <i className="fas fa-trash">All</i>
-          </button>
-        </div>
+        {wishlist.length ? (
+          <div>
+            <h2>Wishlist</h2>
+            <button
+              onClick={() => {
+                setWishList([]);
+              }}
+            >
+              {" "}
+              <i className="fas fa-trash">All</i>
+            </button>
+          </div>
+        ) : (
+          <div className="containerSearch2"></div>
+        )}
         {wishlist.length ? (
           wishlist.map((el, i) => {
             return (
