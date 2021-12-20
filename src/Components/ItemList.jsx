@@ -59,6 +59,11 @@ export default function ItemList() {
                           : "loss"
                       }
                     >
+                      {(((el[1] - el[2]) / el[2]) * 100).toFixed(2) > 0 ? (
+                        <i class="fas fa-caret-up"></i>
+                      ) : (
+                        <i class="fas fa-caret-down"></i>
+                      )}{" "}
                       {el[1]}
                     </h4>
                     <p>{(((el[1] - el[2]) / el[2]) * 100).toFixed(2)}%</p>
